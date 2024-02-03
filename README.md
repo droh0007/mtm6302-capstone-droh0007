@@ -1,1 +1,4 @@
 # mtm6302-capstone-droh0007
+This file contains the pdf with the image of my Pokedex mockup for the capstone two assignment. The design illustrates the colour, font, and overall design for multiple screen sizes and demonstrates the main function of the application. 
+
+The accent colour of the design is sampled from the most popular character Pikachu's cheeks and was also chosen to link it to the many models of the pokedex found throughout the tv show and games. Each pokemon will also have a corresponding background colour to match their "type". Pastel versions of the colours were chosen as they are less likely to conflict with the colours and designs of the individual pokemon. The main page is kept fairly simple with the design mainly having the sprites and the name of the pokemon with the additional information for each after it is clicked. Each breakpoint on the main page will detract one column of pokemon from the view. 
