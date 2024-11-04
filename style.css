@@ -159,6 +159,7 @@ html, body {
 
 .box:hover {
     transform: scale(1.05); /* Scale effect on hover */
+    background-color: #b9b9b9; /* Slightly lighter grey on hover */
 }
 
 /* Image styling */
@@ -179,6 +180,24 @@ html, body {
     z-index: 1; /* Ensure it appears above the image */
 }
 
+/* Pokeball icon styling */
+.pokeball {
+    position: absolute;
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    width: 40px; /* Adjust icon size as needed */
+    height: 40px;
+    background-size: cover;
+}
+
+/* Different backgrounds for caught and uncaught icons */
+.pokeball.caught {
+    background-image: url('images/pokeball-caught.png');
+}
+
+.pokeball.uncaught {
+    background-image: url('images/pokeball-uncaught.png');
+}
 /* Adds style to social icons */
 .social-icons a {
     color: black;
