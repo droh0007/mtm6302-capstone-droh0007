@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <!-- Linking stylesheet, JavaScript, and FontAwesome -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/81fbc9800a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="main">
+        <header class="header-home"></header>
+        <div class="logo-wrapper"></div>
+
+        <header>
+            <img src="images/header.png"Header Image" class="header-image"> <!-- Adjust path as needed -->
+            <!-- Container to hold home button, navigation, and search bar in a single row -->
+            <div class="nav-container">
+                <!-- Home button -->
+                <div class="home-button">
+                    <img src="images/pokeball.png" alt="Home" class="home-icon"> <!-- Adjust path to your home icon -->
+                </div>
+    
+                <!-- Navigation links -->
+                <div class="navigation">
+                    <a href="#">Home</a>
+                    <a href="#">Caught</a>
+                </div>
+    
+                <!-- Search bar container -->
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-button">Search</button>
+                </div>
+            </div>
+        </header>        
+
+        <!-- adds wrapper with a red background -->
+        <div class="wrapper">
+            <div id="boxes" class="boxes"></div>
+        </div>
+
+        <!-- Footer contains contact info and social media icons -->
+        <footer role="contentinfo" itemscope itemtype="http://schema.org/CreativeWork">
+            <p>
+                Hiring Contact: 613-555-5555<br>
+                Legal Address: 512 Stella Street<br>
+                Support Email: KateCreates.com<br>
+                &copy; Copyright Kate Creates, 2024
+            </p>
+            <div class="social-icons">
+                <a href="#" class="fa-stack">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" class="fa-stack">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="#" class="fa-stack">
+                    <i class="fa-brands fa-square-twitter"></i>
+                </a>
+            </div>
+        </footer>
+
+        <a id="main-content" class="hidden" aria-hidden="true"></a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

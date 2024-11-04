@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Makes footer stick at the bottom when content is short */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container to hold home button, navigation, and search bar in a single row */
+.nav-container {
+    display: flex; /* Enables horizontal layout */
+    align-items: center; /* Centers items vertically */
+    padding-left: 50px; /* Aligns to the left */
+    gap: 20px; /* Adds space between home button and navigation links */
+    flex-wrap: nowrap; /* Prevents wrapping */
+    justify-content: flex-start; /* Aligns items to the left */
+}
+
+/* Home button styling */
+.home-button {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for navigation links */
+.navigation a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* sets link color */
+    font-size: 30px; /* sets link font size */
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for navigation links */
+.navigation a:hover {
+    color: #ff0000; /* Hover color for links */
+    background-color: #f1f1f1; /* background on hover */
+    border-radius: 5px; /* Rounds corners on hover */
+}
+
+/* Adjusts the icon size for smaller screens */
+@media (max-width: 600px) {
+    .navigation a {
+        font-size: 18px;
+    }
+}
+
+.home-icon {
+    width: 140px; /* Adjust the size of the icon */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.3s; /* Add a smooth transition */
+}
+
+/* Add hover effect */
+.home-icon:hover {
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Styling the search bar container */
+.search-bar {
+    display: flex; /* Ensure the search bar layout is flexible */
+    align-items: center; /* centers search bar */
+    width: 100%;
+    max-width: 400px; /* adds max size of search bar */
+    margin: 40px auto; /* Add space above and below the search bar */
+    border: 4px solid #ff0000; /* adds thickness and colour of search border */
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+/* Styling the input field */
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    background: none; /* Remove button background color to show only icon */
+    color: #ff0000;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+}
+
+/* Circle styling for the Font Awesome icon */
+.icon-circle {
+    background-color: #ff0000; /* Background color for the icon */
+    color: #fff; /* Icon color */
+    width: 30px; /* Adjust width */
+    height: 30px; /* Adjust height */
+    border-radius: 50%; /* Makes the background circular */
+    display: flex;
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    font-size: 16px;
+    line-height: 1; /* Ensures the icon doesn’t shift vertically */
+    transition: background-color 0.3s;
+}
+
+/* Adds style to search icon by having grey hover */
+.search-button:hover {
+    background-color: #555; 
+}
+
+.header-image {
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures no bottom space */
+    margin: 0 auto; /* Centers the image */
+}
+
+/* Wrapper for the boxes */
+.wrapper {
+    background-color: red; /* Red background for the wrapper */
+    padding: 40px; /* Adds padding to the wrapper */
+    padding-top: 70px;
+}
+
+/* Container for the boxes */
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adds spacing between boxes */
+    justify-content: center; /* Centers all boxes in the container */
+    background-color: white; /* White background for the boxes area */
+    padding: 20px; /* Adds padding around the boxes */
+    border-radius: 20px; /* Rounds corners of the boxes area */
+}
+
+/* Each individual box */
+.box {
+    display: grid;
+    place-items: center; /* Centers content both horizontally and vertically */
+    width: 300px; /* Sets default box width */
+    height: 300px; /* Sets default box height */
+    margin: 0.5rem;
+    color: #fff; /* Adds text colour */
+    background-color: #a0a0a0; /* Adds background colour */
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 20px; /* Adds rounded corners to boxes */
+    overflow: hidden; /* Ensures overflow is hidden */
+    position: relative; /* Set position to relative for absolute positioning of child elements */
+    transition: transform 0.3s ease; /* Smooth transition for the grow effect */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Image styling */
+.box img {
+    width: 100%; /* Makes the image take the full width of the box */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 20px 20px 0 0; /* rounds the top corners of the image */
+}
+
+/* Number styling */
+.box .box-number {
+    position: absolute; /* Positioning the number absolutely */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    color: white; /* Color of the text */
+    font-size: 24px; /* Font size for visibility */
+    font-weight: bold; /* Make it bold */
+    z-index: 1; /* Ensure it appears above the image */
+}
+
+/* Adds style to social icons */
+.social-icons a {
+    color: black;
+    font-size: 80px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Change color on hover */
+.social-icons a:hover {
+    color: #fbff00; /* Hover color */
+}
+
+/* Footer styling */
+footer {
+    text-align: center; /* Centers items in footer */
+    font-weight: 600; /* Changes thickness of font */
+    background-color: #ff0000;
+    color: #fff; /* Text colour */
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Breakpoint for small screens */
+@media (max-width: 600px) {
+    .box {
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+/* Breakpoint for medium screens */
+@media (min-width: 601px) and (max-width: 900px) {
+    .box {
+        width: 200px; /* Medium size for tablets */
+        height: 200px; /* Medium height for tablets */
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+/* Breakpoint for large screens */
+@media (min-width: 901px) {
+    .box {
+        width: 300px; /* Keep box size for desktops */
+        height: 300px; /* Keep box height for desktops */
+        font-size: 18px; /* Adjust font size */
+    }
+}
+
+/* Responsive styling for the search bar */
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+    .search-bar {
+        max-width: 90%; /* Use more of the screen width on mobile */
+    }
+}
+
+/* Medium screens */
+@media (min-width: 601px) and (max-width: 900px) {
+    .search-bar {
+        max-width: 70%; /* Adjust max width for tablets */
+    }
+}
+
+/* Large screens */
+@media (min-width: 901px) {
+    .search-bar {
+        max-width: 50%; /* Limit width on larger screens */
+    }
+}
