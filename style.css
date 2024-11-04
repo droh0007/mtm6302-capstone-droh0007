@@ -198,6 +198,28 @@ html, body {
 .pokeball.uncaught {
     background-image: url('images/pokeball-uncaught.png');
 }
+
+.more-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffa600; /* orange background */
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .more-button:hover {
+    background-color: #ca5b00; /* Darker orange on hover */
+  }
+  
+  .more-button span {
+    margin-left: 5px; /* Space between text and arrow */
+  }  
+
 /* Adds style to social icons */
 .social-icons a {
     color: black;
